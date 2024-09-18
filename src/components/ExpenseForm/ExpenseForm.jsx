@@ -5,14 +5,14 @@ import Button from "../Button/Button.jsx";
 import { useEffect, useState } from "react";
 import { useSnackbar } from "notistack";
 
-export default function ExpenseForm({
+const ExpenseForm = ({
   setIsOpen,
   expenseList,
   setExpenseList,
   editId,
   setBalance,
   balance,
-}) {
+}) => {
   const [formData, setFormData] = useState({
     title: "",
     category: "",
@@ -147,4 +147,6 @@ export default function ExpenseForm({
       </form>
     </div>
   );
-}
+};
+
+export default ExpenseForm;

@@ -2,7 +2,7 @@ import React from "react";
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts";
 import styles from "./BarChart.module.css";
 
-export default function BarChartComponent({ data }) {
+const BarChartComponent = ({ data }) => {
   return (
     <div className={styles.expenseChart}>
       <h2>Top Expenses</h2>
@@ -23,4 +23,6 @@ export default function BarChartComponent({ data }) {
       </div>
     </div>
   );
-}
+};
+
+export default BarChartComponent;

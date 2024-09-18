@@ -6,13 +6,13 @@ import ExpenseForm from "../ExpenseForm/ExpenseForm";
 import { useEffect, useState } from "react";
 import Pagination from "../Pagination/Pagination";
 
-export default function TransactionList({
+const TransactionList = ({
   transactions,
   title,
   editTransactions,
   balance,
   setBalance,
-}) {
+}) => {
   const [editId, setEditId] = useState(0);
   const [isDisplayEditor, setIsDisplayEditor] = useState(false);
   const [currentTransactions, setCurrentTransactions] = useState([]);
@@ -41,7 +41,6 @@ export default function TransactionList({
     setTotalPages(Math.ceil(transactions.length / maxRecords));
   }, [currentPage, transactions]);
 
-  // update page if all items on current page have been deleted
   useEffect(() => {
     if (totalPages < currentPage && currentPage > 1) {
       setCurrentPage((prev) => prev - 1);
@@ -90,4 +89,6 @@ export default function TransactionList({
       </Modal>
     </div>
   );
-}
+};
+
+export default TransactionList;

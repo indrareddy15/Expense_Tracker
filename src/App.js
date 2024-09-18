@@ -1,7 +1,7 @@
 import Dashboard from './components/Dashboard/Dashboard';
 import { SnackbarProvider } from 'notistack';
 
-function App() {
+const App = () => {
   return (
     <SnackbarProvider >
       <div>

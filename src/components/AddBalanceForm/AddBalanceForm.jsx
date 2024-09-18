@@ -4,7 +4,7 @@ import Button from "../Button/Button.jsx";
 import { useState } from "react";
 import { useSnackbar } from "notistack";
 
-export default function AddBalanceForm({ setIsOpen, setBalance }) {
+const AddBalanceForm = ({ setIsOpen, setBalance }) => {
   const [income, setIncome] = useState("");
   const { enqueueSnackbar } = useSnackbar();
 
@@ -45,4 +45,6 @@ export default function AddBalanceForm({ setIsOpen, setBalance }) {
       </form>
     </div>
   );
-}
+};
+
+export default AddBalanceForm
