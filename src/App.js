@@ -1,11 +1,11 @@
-import Home from './pages/Home/Home'
+import Dashboard from './components/Dashboard/Dashboard';
 import { SnackbarProvider } from 'notistack';
 
 function App() {
   return (
     <SnackbarProvider >
       <div>
-        <Home />
+        <Dashboard />
       </div>
     </SnackbarProvider>
   );

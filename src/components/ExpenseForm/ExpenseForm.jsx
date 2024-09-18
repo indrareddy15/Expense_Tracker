@@ -1,7 +1,7 @@
 /* eslint-disable react/style-prop-object */
 /* eslint-disable react-hooks/exhaustive-deps */
 import styles from "./ExpenseForm.module.css";
-import Button from "../../Button/Button.jsx";
+import Button from "../Button/Button.jsx";
 import { useEffect, useState } from "react";
 import { useSnackbar } from "notistack";
 

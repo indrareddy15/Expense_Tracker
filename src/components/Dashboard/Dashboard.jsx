@@ -1,22 +1,21 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
-import Card from "../../components/Card/Card";
-import styles from "./Home.module.css";
-import TransactionList from "../../components/TransactionList/TransactionList";
-import ExpenseForm from "../../components/Forms/ExpenseForm/ExpenseForm";
-import Modal from "../../components/Modal/Modal";
-import AddBalanceForm from "../../components/Forms/AddBalanceForm/AddBalanceForm";
-import PieChart from "../../components/PieChart/PieChart";
-import BarChart from "../../components/BarChart/BarChart";
+import Card from "../Card/Card";
+import styles from "./Dashboard.module.css";
+import TransactionList from "../TransactionList/TransactionList";
+import ExpenseForm from "../ExpenseForm/ExpenseForm";
+import Modal from "../Modal/Modal";
+import AddBalanceForm from "../AddBalanceForm/AddBalanceForm";
+import PieChart from "../PieChart/PieChart";
+import BarChart from "../BarChart/BarChart";
 
-export default function Home() {
+const Dashboard = () => {
   const [balance, setBalance] = useState(0);
   const [expense, setExpense] = useState(0);
   const [expenseList, setExpenseList] = useState([]);
   const [isMounted, setIsMounted] = useState(false);
 
-  //Show hide modals
   const [isOpenExpense, setIsOpenExpense] = useState(false);
   const [isOpenBalance, setIsOpenBalance] = useState(false);
 
@@ -32,7 +31,6 @@ export default function Home() {
   });
 
   useEffect(() => {
-    //Check localStorage
     const localBalance = localStorage.getItem("balance");
 
     if (localBalance) {
@@ -48,7 +46,6 @@ export default function Home() {
     setIsMounted(true);
   }, []);
 
-  // saving expense list in localStorage
   useEffect(() => {
     if (expenseList.length > 0 || isMounted) {
       localStorage.setItem("expenses", JSON.stringify(expenseList));
@@ -99,7 +96,6 @@ export default function Home() {
     });
   }, [expenseList]);
 
-  // saving balance in localStorage
   useEffect(() => {
     if (isMounted) {
       localStorage.setItem("balance", balance);
@@ -109,8 +105,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <h1>Expense Tracker</h1>
-
-      {/* Cards and pie chart wrapper */}
 
       <div className={styles.cardsWrapper}>
         <Card
@@ -143,7 +137,6 @@ export default function Home() {
         />
       </div>
 
-      {/* Transactions and bar chart wrapper */}
       <div className={styles.transactionsWrapper}>
         <TransactionList
           transactions={expenseList}
@@ -162,7 +155,6 @@ export default function Home() {
         />
       </div>
 
-      {/* Modals */}
       <Modal isOpen={isOpenExpense} setIsOpen={setIsOpenExpense}>
         <ExpenseForm
           setIsOpen={setIsOpenExpense}
@@ -178,4 +170,6 @@ export default function Home() {
       </Modal>
     </div>
   );
-}
+};
+
+export default Dashboard;
