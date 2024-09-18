@@ -37,4 +37,4 @@ A web application for tracking expenses, allowing users to add, edit, and delete
 ## Live Demo
 
 You can check out the live version of the app here:  
-[Expense Tracker on Vercel](https://your-vercel-link.vercel.app)
+[Expense Tracker on Vercel](https://expense-tracker-270ax97g5-indra-reddys-projects.vercel.app)
