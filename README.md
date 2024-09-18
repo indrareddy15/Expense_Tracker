@@ -1,4 +1,4 @@
-# Crio Code-A-Thon Project: Expense Tracker
+# Expense Tracker
 
 ![Screenshot of App](./public/Indra_Expense_Tracker.png)
 
@@ -9,7 +9,7 @@ A web application for tracking expenses, allowing users to add, edit, and delete
 ### Features:
 
 - **Wallet Balance Management:**
-  - The app starts with a default wallet balance of 5000.
+  - The app starts with a default wallet balance of 7500.
   - Users can increase the wallet balance.
   - The app prevents users from spending more than their available wallet balance by showing an alert.
 - **Expense Management:**
