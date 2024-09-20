@@ -26,7 +26,9 @@ A web application for tracking expenses, allowing users to add, edit, and delete
 
 - `HTML`
 - `CSS`
+- `JavaScript`
 - `React JS`
+  
 
 ## NPM Libraries Used for Charts 🚀
 
