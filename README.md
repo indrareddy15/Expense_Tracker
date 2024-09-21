@@ -42,7 +42,7 @@ A web application for tracking expenses, allowing users to add, edit, and delete
 
 ```bash
 git clone https://github.com/indrareddy15/Expense_Tracker.git
-cd EXPENSE-TRACKER
+cd Expense_Tracker
 ```
 
 2. **Install Dependencies**:
