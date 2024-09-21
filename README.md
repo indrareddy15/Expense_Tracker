@@ -28,7 +28,6 @@ A web application for tracking expenses, allowing users to add, edit, and delete
 - `CSS`
 - `JavaScript`
 - `React JS`
-  
 
 ## NPM Libraries Used for Charts 🚀
 
@@ -37,10 +36,14 @@ A web application for tracking expenses, allowing users to add, edit, and delete
 - [Notistack](https://notistack.com/getting-started) for notifications
 - [React Icons](https://react-icons.github.io/react-icons/) for icons
 
-  ```bash
-  git clone https://github.com/indrareddy15/Expense_Tracker.git
-  cd EXPENSE-TRACKER
-  ```
+## Installation
+
+1. **Clone the Repository**:
+
+```bash
+git clone https://github.com/indrareddy15/Expense_Tracker.git
+cd EXPENSE-TRACKER
+```
 
 2. **Install Dependencies**:
 
