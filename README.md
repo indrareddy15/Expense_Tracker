@@ -40,9 +40,9 @@ A web application for tracking expenses, allowing users to add, edit, and delete
 
 1. **Clone the Repository**:
 
-```bash
-git clone https://github.com/indrareddy15/Expense_Tracker.git
-```
+    ```bash
+    git clone https://github.com/indrareddy15/Expense_Tracker.git
+    ```
 
 2. **Install Dependencies**:
 
